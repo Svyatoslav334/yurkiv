@@ -11,23 +11,24 @@
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
         }
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
         .page-container {
             width: 900px;
             margin: 20px auto;
             background: white;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             overflow: hidden;
+            display: flex;
         }
         .left-side {
             padding: 20px;
             width: 30%;
             background-color: #3a5e90;
             color: white;
+            float: left;
+        }
+        .right-side {
+            padding: 20px;
+            width: 70%;
             float: left;
         }
         .left-side img {
@@ -37,120 +38,84 @@
             border: 3px solid white;
             margin-bottom: 15px;
         }
-        .left-side h3 {
+        .left-side h3, .right-side h2 {
             margin-bottom: 10px;
-            margin-top: 30px;
         }
-        .left-side hr {
+        .left-side hr, .right-side hr {
             border: 1px solid white;
-            width: 250px;
-            margin: 0;
-        }
-        .left-side b {
-            font-size: 14px;
-            display: block;
-            margin-top: 10px;
-        }
-        .left-side p {
-            font-size: 14px;
-            margin: 5px 0;
-        }
-        .right-side {
-            padding: 20px;
-            width: 70%;
-            float: left;
-        }
-        .right-side h1 {
-            font-size: 26px;
             margin-bottom: 10px;
         }
-        .right-side h2 {
-            font-size: 20px;
-            margin-top: 20px;
-            display: inline-block;
-            padding-bottom: 5px;
-        }
-        .right-side b {
-            display: block;
-            font-size: 16px;
-            margin-top: 15px;
-        }
-        .right-side p {
-            font-size: 14px;
-            line-height: 1.5;
-        }
-        .right-side hr {
-            margin-top: 20px;
-        }
-        .clear {
-            clear: both;
+        .right-side section {
+            margin-bottom: 20px;
         }
         a {
             text-decoration: none;
             background-color: #42abf1;
             color: white;
-            padding: 12px 20px;
-            border-radius: 5px; 
+            padding: 10px 15px;
+            border-radius: 5px;
             font-size: 16px;
-            text-align: center;
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
     <div class="page-container">
-        <div class="left-side">
+
+        <aside class="left-side">        
+
             <img src="" alt="Фото">
             <h3>Особисті дані</h3>
             <hr>
-            <b>Ім'я</b>
-            <p>Юрків Святослав</p>
-            <b>Адреса</b>
-            <p>вул. Миколайчука, буд. 17, 76006 Івано-Франківськ</p>
-            <b>Телефон</b>
-            <p>+380 99 688-32-28</p>
-            <b>Email</b>
-            <p>sviatoslav.yurkiv-pi2203@kep.nung.edu.ua</p>
-            <b>Дата народження</b>
-            <p>16-08-2007</p>
+            <address>
+                <b>Ім'я</b>
+                <p>Юрків Святослав</p>
+                <b>Адреса</b>
+                <p>вул. Миколайчука, буд. 17, 76006 Івано-Франківськ</p>
+                <b>Телефон</b>
+                <p>+380 99 688-32-28</p>
+                <b>Email</b>
+                <p>sviatoslav.yurkiv-pi2203@kep.nung.edu.ua</p>
+                <b>Дата народження</b>
+                <p>16-08-2007</p>
+            </address>
             <h3>Інтереси</h3>
             <hr>
-            <b>Комп'ютрені ігри</b>
-            <b>ООП</b>
+            <p>Комп'ютерні ігри, ООП</p>
             <h3>Мови</h3>
             <hr>
-            <p>
-                <b style="display: inline-block; width: 50%;">Українська</b>
-                <span style="display: inline-block; width: 45%; text-align: right;">Рідна мова</span>
-            </p>
-            <p>
-                <b style="display: inline-block; width: 50%;">Англійська</b>
-                <span style="display: inline-block; width: 45%; text-align: right;">Добре</span>
-            </p>
-        </div>
-        <div class="right-side">
-            <h1>Юрків Святослав</h1><hr>
-            <h2>Освіта і кваліфікація</h2><hr>
-            <p style="margin-bottom: 10px;">
-                <b style="display: inline-block; width: 50%;">Молодший бакалавр</b>
-                <span style="display: inline-block; width: 45%; text-align: right;">вер. 2022 - чер. 2026</span>
-            </p>
-            <i>ВСП "Фаховий коледж електронних приладів ІФНТУНГ", Івано-Франківськ</i>
-            <p>Спеціальність "Інженерія програмного забезпечення"</p>
-            <h2>Курси</h2><hr>
-            <p style="margin-bottom: 10px;">
-                <b style="display: inline-block; width: 70%;">Основи сайтобудування HTML5, CSS3, JavaScript </b>
-                <span style="display: inline-block; width: 25%; text-align: right;">вер. 2019 - вер. 2020</span>
-            </p>
-            <i>IT-Еліт(Івано-Франківськ)</i>
-            <br>
-            <h2>Навички</h2><hr>
-            <p>C++, HTML, CSS, JavaScript, SQL</p>
-            <h2>Мої роботи</h2><hr>
-            <a href = "Lab1/index.html">Лабораторна робота №1</a>
-        </div>
-        <div class="clear"></div>
+            <p>Українська - Рідна мова</p>
+            <p>Англійська - Добре</p>
+        </aside>
+        <main class="right-side">
+            <header>
+                <h1>Юрків Святослав</h1>
+            </header>
+            <section>
+                <h2>Освіта і кваліфікація</h2>
+                <hr>
+                <p><b>Молодший бакалавр</b> (вер. 2022 - чер. 2026)</p>
+                <p><i>ВСП "Фаховий коледж електронних приладів ІФНТУНГ", Івано-Франківськ</i></p>
+                <p>Спеціальність "Інженерія програмного забезпечення"</p>
+            </section>
+            <section>
+                <h2>Курси</h2>
+                <hr>
+                <p><b>Основи сайтобудування HTML5, CSS3, JavaScript</b> (вер. 2019 - вер. 2020)</p>
+                <p><i>IT-Еліт (Івано-Франківськ)</i></p>
+            </section>
+            <section>
+                <h2>Навички</h2>
+                <hr>
+                <p>C++, HTML, CSS, JavaScript, SQL</p>
+            </section>
+            <section>
+                <h2>Мої роботи</h2>
+                <hr>
+                <a href="Lab1/index.html">Лабораторна робота №1</a>
+            </section>
+        </main>
     </div>
 </body>
 </html>
