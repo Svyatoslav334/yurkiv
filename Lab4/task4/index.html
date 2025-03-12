@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Батарея</title>
+    <style>
+        .battery {
+            position: relative;
+            width: 120px;
+            height: 40px;
+            border: 4px solid black;
+            margin: 10px;
+        }
+        .battery::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: -10px;
+            width: 8px;
+            height: 16px;
+            background: black;
+            transform: translateY(-50%);
+            border-radius: 2px;
+        }
+        .battery.red::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 30%;
+            height: 100%;
+            background: red;
+        }
+        .battery.orange::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60%;
+            height: 100%;
+            background: orange;
+        }
+        .battery.green::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgb(10, 223, 10);
+        }
+    </style>
+</head>
+<body>
+    <div class="battery red"></div>
+    <div class="battery orange"></div>
+    <div class="battery green"></div>
+</body>
+</html>
