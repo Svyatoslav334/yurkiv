@@ -57,11 +57,10 @@ ul {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 15px;
+    padding: 0;
 }
-ul li {
-    margin-top: 10px;
-}
+
 h4 {
     margin: 5px;
 }
