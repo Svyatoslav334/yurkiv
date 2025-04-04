@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+        .table-container {
+            float: left;
+            width: 25%;
+            margin: 15px;
+            overflow: hidden;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .small{
+            border-bottom: 7px solid #d87620;
+            border-right: 2px solid #E67E22;
+            border-left: 2px solid #E67E22;
+        }
+        .tiny{
+
+            border-bottom: 7px solid #00754e;
+            border-right: 2px solid #009966;
+            border-left: 2px solid #009966;
+        }
+        .medium{
+            border-bottom: 7px solid #9b2f23;
+            border-right: 2px solid #C0392B;
+            border-left: 2px solid #C0392B;
+        }
+        th {
+            color: white;
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .green { 
+            background-color: #009966;
+            border-bottom: 7px solid #00754e 
+        }
+        .orange { 
+            background-color: #E67E22;
+            border-bottom: 7px solid #d87620; 
+        }
+        .red { 
+            background-color: #C0392B;
+            border-bottom: 7px solid #9b2f23;
+        }
+        td {
+            background-color: #F9F9F9;
+            padding: 15px;
+            color: #707070;
+        }
+        .signup-btn {
+            padding: 15px;
+            width: 60%;
+            font-size: 16px;
+            color: white;
+            border: none;
+        }
+        .bth{
+            border-top: 1px dashed #707070;
+            border-width: 20%;
+        }
+        .signup-green { background-color: #009966; }
+        .signup-orange { background-color: #E67E22; }
+        .signup-red { background-color: #C0392B; }
+        .clearfix { clear: both; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="table-container">
+            <table class="tiny">
+                <tr><th class="green">€ 15/mo<br>Tiny</th></tr>
+                <tr><td><strong>Unlimited</strong> Email Addresses</td></tr>
+                <tr><td><strong>50GB</strong> Disk Space</td></tr>
+                <tr><td><strong>Unlimited</strong> MySQL Databases</td></tr>
+                <tr><td><strong>Unlimited</strong> Domains</td></tr>
+                <tr><td><strong>Free</strong> Billing Systems</td></tr>
+                <tr><td class="bth"><button class="signup-btn signup-green">SIGN UP</button></td></tr>
+            </table>
+        </div>
+        <div class="table-container">
+            <table class="small">
+                <tr><th class="orange">€ 29/mo<br>Small</th></tr>
+                <tr><td><strong>Unlimited</strong> Email Addresses</td></tr>
+                <tr><td><strong>80GB</strong> Disk Space</td></tr>
+                <tr><td><strong>Unlimited</strong> MySQL Databases</td></tr>
+                <tr><td><strong>Unlimited</strong> Domains</td></tr>
+                <tr><td><strong>Free</strong> Billing Systems</td></tr>
+                <tr><td class="bth"><button class="signup-btn signup-orange">SIGN UP</button></td></tr>
+            </table>
+        </div>
+        <div class="table-container">
+            <table class="medium">
+                <tr><th class="red">€ 69/mo<br>Medium</th></tr>
+                <tr><td><strong>Unlimited</strong> Email Addresses</td></tr>
+                <tr><td><strong>120GB</strong> Disk Space</td></tr>
+                <tr><td><strong>Unlimited</strong> MySQL Databases</td></tr>
+                <tr><td><strong>Unlimited</strong> Domains</td></tr>
+                <tr><td><strong>Free</strong> Billing Systems</td></tr>
+                <tr><td class="bth"><button class="signup-btn signup-red">SIGN UP</button></td></tr>
+            </table>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</body>
+</html>

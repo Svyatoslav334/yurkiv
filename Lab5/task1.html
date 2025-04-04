@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid white;
+            padding: 10px;
+        }
+
+        th, .company {
+            background: #7fb8da;
+            color: white;
+        }
+
+        td {
+            background: #d9ecf7;
+        }
+
+        .container {
+            width: 100%;
+            margin: 10px auto;
+            height: auto;
+        }
+
+        .row {
+            float: left;
+            width: 100%;
+            clear: both;
+        }
+
+        .cell {
+            float: left;
+            width: 10%;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid white;
+            background: #d9ecf7;
+        }
+
+        .header .cell {
+            background: #7fb8da;
+            color: white;
+            font-weight: bold;
+        }
+
+        .row .cell:first-child {
+            background: #7fb8da;
+            color: white;
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Company</th>
+            <th>Q1</th>
+            <th>Q2</th>
+            <th>Q3</th>
+            <th>Q4</th>
+        </tr>
+        <tr>
+            <td class="company">Microsoft</td>
+            <td>20.3</td>
+            <td>30.5</td>
+            <td>23.5</td>
+            <td>40.3</td>
+        </tr>
+        <tr>
+            <td class="company">Google</td>
+            <td>50.2</td>
+            <td>40.63</td>
+            <td>45.23</td>
+            <td>39.3</td>
+        </tr>
+        <tr>
+            <td class="company">Apple</td>
+            <td>25.4</td>
+            <td>30.2</td>
+            <td>33.3</td>
+            <td>36.7</td>
+        </tr>
+        <tr>
+            <td class="company">IBM</td>
+            <td>20.4</td>
+            <td>15.6</td>
+            <td>22.3</td>
+            <td>29.3</td>
+        </tr>
+    </table>
+
+
+
+    <div class="row header">
+        <div class="cell">Company</div>
+        <div class="cell">Q1</div>
+        <div class="cell">Q2</div>
+        <div class="cell">Q3</div>
+        <div class="cell">Q4</div>
+    </div>
+    <div class="row">
+        <div class="cell">Microsoft</div>
+        <div class="cell">20.3</div>
+        <div class="cell">30.5</div>
+        <div class="cell">23.5</div>
+        <div class="cell">40.3</div>
+    </div>
+    <div class="row">
+        <div class="cell">Google</div>
+        <div class="cell">50.2</div>
+        <div class="cell">40.63</div>
+        <div class="cell">45.23</div>
+        <div class="cell">39.3</div>
+    </div>
+    <div class="row">
+        <div class="cell">Apple</div>
+        <div class="cell">25.4</div>
+        <div class="cell">30.2</div>
+        <div class="cell">33.3</div>
+        <div class="cell">36.7</div>
+    </div>
+    <div class="row">
+        <div class="cell">IBM</div>
+        <div class="cell">20.4</div>
+        <div class="cell">15.6</div>
+        <div class="cell">22.3</div>
+        <div class="cell">29.3</div>
+    </div>
+
+</body>
+</html>
