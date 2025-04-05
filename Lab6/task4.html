@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .calc {
+            width: 240px;
+            border: 2px solid #4a9191;
+            border-radius: 10px;
+            padding: 10px 0;
+            background: #fff;
+        }
+
+        .float-calc {
+            float: left;
+        }
+        .row::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .row button {
+            float: left;
+            height: 50px;
+        }
+        .row{
+            margin: 0 3px;
+        }
+        .position-calc {
+            float: left;
+            margin-left: 40px;
+        }
+
+        .top-bar {
+            background: #4a9191;
+            color: white;
+            padding: 8px;
+            text-align: right;
+            font-size: 14px;
+        }
+
+        .display {
+            width: auto;
+            margin: 10px 10px;
+            padding: 8px;
+            font-size: 16px;
+            border: 2px solid #4a9191;
+            border-radius: 4px;
+        }
+
+        .small-screen {
+            width: 80px;
+            height: 30px;
+            background: #4a9191;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            float: right;
+        }
+        .buttons button {
+            width: 50px;
+            height: 50px;
+            margin: 4px;
+            border: 2px solid #4a9191;
+            background: white;
+            font-size: 18px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .buttons-position {
+            position: relative;
+            height: 240px;
+            margin-top: 40px;
+        }
+
+        .buttons-position button {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            border: 2px solid #4a9191;
+            background: white;
+            font-size: 18px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .buttons-position button:nth-child(1)  { top: 0; left: 5px; }
+        .buttons-position button:nth-child(2)  { top: 0; left: 65px; }
+        .buttons-position button:nth-child(3)  { top: 0; left: 125px; }
+        .buttons-position button:nth-child(4)  { top: 0; left: 185px; }
+        .buttons-position button:nth-child(5)  { top: 60px; left: 5px; }
+        .buttons-position button:nth-child(6)  { top: 60px; left: 65px; }
+        .buttons-position button:nth-child(7)  { top: 60px; left: 125px; }
+        .buttons-position button:nth-child(8)  { top: 60px; left: 185px; }
+        .buttons-position button:nth-child(9)  { top: 120px; left: 5px; }
+        .buttons-position button:nth-child(10) { top: 120px; left: 65px; }
+        .buttons-position button:nth-child(11) { top: 120px; left: 125px; }
+        .buttons-position button:nth-child(12) { top: 120px; left: 185px; }
+        .buttons-position button:nth-child(13) { top: 180px; left: 5px; }
+        .buttons-position button:nth-child(14) { top: 180px; left: 65px; }
+        .buttons-position button:nth-child(15) { top: 180px; left: 125px; }
+        .buttons-position button:nth-child(16) { top: 180px; left: 185px; }
+        button:hover {
+            background-color: #c2eaea;
+        }
+        button:active {
+            background-color: #91caca;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="calc float-calc">
+        <div class="top-bar">Casio 3234</div>
+        <input type="text" class="display">
+        <div class="small-screen"></div>
+        <div style="clear: both;"></div>
+        <div class="buttons">
+          <div class="row">
+            <button>7</button><button>8</button><button>9</button><button>+</button>
+          </div>
+          <div class="row">
+            <button>4</button><button>5</button><button>6</button><button>-</button>
+          </div>
+          <div class="row">
+            <button>1</button><button>2</button><button>3</button><button>/</button>
+          </div>
+          <div class="row">
+            <button>,</button><button>0</button><button>=</button><button>*</button>
+          </div>
+        </div>
+      </div>
+    
+        <div class="calc position-calc">
+          <div class="top-bar">Casio 3234</div>
+          <input type="text" class="display">
+          <div class="small-screen"></div>
+          <div class="buttons-position">
+            <button>7</button><button>8</button><button>9</button><button>+</button>
+            <button>4</button><button>5</button><button>6</button><button>-</button>
+            <button>1</button><button>2</button><button>3</button><button>/</button>
+            <button>,</button><button>0</button><button>=</button><button>*</button>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
