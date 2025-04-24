@@ -55,12 +55,19 @@ a {
 }
 ul {
     list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    padding: 0;
+}
+ul li {
+    margin-top: 10px;
+}
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    background-color: none;
 }
 
-h4 {
-    margin: 5px;
+.social-icons .icon {
+    width: 32px;
+    height: 32px;
+    fill: #000;
 }
+
