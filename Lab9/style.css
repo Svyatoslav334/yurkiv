@@ -177,3 +177,84 @@ body {
     font-size: 13px;
     color: #fff;
 }
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        margin: 0 20px;
+        align-items: flex-start;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav a {
+        margin: 5px 0;
+        font-size: 18px;
+    }
+
+    .jumbotron {
+        height: 300px;
+        padding: 0 20px;
+    }
+
+    .jumbotron h1 {
+        font-size: 28px;
+    }
+
+    .btn {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    .services, .blog, .about {
+        padding: 30px 20px;
+    }
+
+    .services-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        max-width: 100%;
+    }
+
+    .blog-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .blog-item img {
+        margin: 0 0 20px 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .blog-item .content {
+        text-align: center;
+    }
+
+    .about-content p {
+        font-size: 15px;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+
+    .footer .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer .nav a {
+        margin: 0;
+        font-size: 16px;
+    }
+}
