@@ -24,13 +24,12 @@ body {
 }
 
 .header-bottom {
-  position: absolute;
-  bottom: 8px;
-  left: 0;
-  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 16px;
+  margin-top: 8px;
+  color: white;
 }
 
 .agency {
