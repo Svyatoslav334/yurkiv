@@ -17,11 +17,13 @@ body {
   margin: 0;
   font-size: 29px;
   color: white;
+  font-weight: bold;
 }
 
 .header h2 {
   text-transform: uppercase;
   margin-top: 0;
+  font-weight: normal;
 }
 
 .header-bottom {
