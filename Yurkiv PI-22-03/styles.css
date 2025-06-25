@@ -75,7 +75,11 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   cursor: pointer;
 }
-
+.event-card:hover {
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.6);
+  transform: translateY(-8px);
+  border-color: #fff;
+}
 .event-card img {
   display: block;
   width: 100%;
