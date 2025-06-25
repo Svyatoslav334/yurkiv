@@ -30,6 +30,8 @@ body {
   padding: 0 16px;
   margin-top: 8px;
   color: white;
+  background-color: #000;
+  margin-bottom: 0;
 }
 
 .agency {
